@@ -13,6 +13,18 @@ export class AppComponent {
     cities: string[];
     citiesVolgensModel: City[];
 
+    showCity(city) {
+        // alert(city);
+    }
+
+    kleur(element) {
+        alert(element);
+    }
+
+    newCity(test) {
+        alert(test.value);
+    }
+
     constructor() {
         this.name = 'Peter Kassenaar';
         this.city = 'Groningen';

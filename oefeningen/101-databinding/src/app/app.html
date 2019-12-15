@@ -12,7 +12,7 @@
 <hr>
 <h3>Mijn favoriete steden zijn :</h3>
 <ul>
-    <li *ngFor="let city of cities">{{ city}}</li>
+    <li *ngFor="let city of cities" (click)="showCity(city)" (onmouseover)="kleur($event.target)">{{ city}}</li>
 </ul>
 <hr>
 <!-- ********************************** -->
@@ -29,3 +29,6 @@
 <ul>
     <li *ngFor="let city of citiesVolgensModel">{{ city.id}} - {{ city.name }}</li>
 </ul>
+
+
+<input (keyup.enter)="newCity(test)" #test>
